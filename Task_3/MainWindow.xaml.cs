@@ -99,16 +99,13 @@ namespace Task_3
 
         void CompressFile(string filePath)
         {
-            string compressedFilePath = filePath + ".gz"; // Путь к сжатому файлу
+            string compressedFilePath = filePath + ".gz";
 
-            // Создание потока для сжатия данных
             using (var inputFileStream = new FileStream(filePath, FileMode.Open))
             using (var compressedFileStream = new FileStream(compressedFilePath, FileMode.Create))
             {
-                // Использование GZipStream для сжатия данных
                 using (var gzipStream = new GZipStream(compressedFileStream, CompressionMode.Compress))
                 {
-                    // Копирование данных из исходного файла в сжатый файл
                     inputFileStream.CopyTo(gzipStream);
                 }
             }
