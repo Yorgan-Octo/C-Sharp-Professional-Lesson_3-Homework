@@ -1,0 +1,20 @@
+﻿<Window x:Class="Task_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="256" Width="409">
+    <Grid>
+        <TextBox x:Name="NameFile" HorizontalAlignment="Left" Margin="51,26,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="204" Height="22"/>
+        <Button x:Name="DownButton" Content="Завантажити" HorizontalAlignment="Left" Margin="260,171,0,0" VerticalAlignment="Top" Width="89" Height="30" Click="DownButton_Click"/>
+        <TextBox x:Name="ContentFile" HorizontalAlignment="Left" Margin="51,77,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="298" Height="80"/>
+        <TextBox x:Name="ExtensionFile" HorizontalAlignment="Left" Margin="260,26,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="89" Height="22"/>
+        <Button x:Name="CrieteFileButtin" Content="Сотворити" HorizontalAlignment="Left" Margin="51,171,0,0" VerticalAlignment="Top" Width="204" Height="30" Click="CrieteFileButtin_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="51,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="uk-ua" Text="Імя Фала"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="260,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Розш"/><Run Text="и"/><Run Language="uk-ua" Text="."/><Run Text=" файла"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="51,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="uk-ua" Text="По"/><Run Language="ru-ru" Text="в"/><Run Language="uk-ua" Text="ідомлення"/></TextBlock>
+
+    </Grid>
+</Window>
