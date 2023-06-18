@@ -84,9 +84,8 @@ namespace Task_3
 
         private void CompressedButton_Click(object sender, RoutedEventArgs e)
         {
-            string filePath = $"{SubDrirBox.SelectedItem}" + $"{NameFileBox.Text}" + $".{ExtenshFileBox.Text}"; // Замените на путь к вашему файлу
+            string filePath = $"{SubDrirBox.SelectedItem}" + $"{NameFileBox.Text}" + $".{ExtenshFileBox.Text}"; 
 
-            // Проверка, существует ли файл
             if (File.Exists(filePath))
             {
                 CompressFile(filePath);
